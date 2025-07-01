@@ -1,0 +1,162 @@
+﻿@model Online_Bus_Booking_System_DAO.Booking
+@{
+    ViewData["Title"] = "Edit Booking";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #1c92d2, #f2fcfe);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-header {
+            background: #007bff;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+
+            .btn-primary:hover {
+                background-color: #2980b9;
+                transform: scale(1.05);
+            }
+
+        .btn-secondary {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+            .form-control::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            .form-control:focus {
+                background: rgba(255, 255, 255, 0.3);
+                color: white;
+            }
+
+        .input-group-append .btn {
+            background: #5a5a5a;
+            border: none;
+        }
+
+            .input-group-append .btn:hover {
+                background: #3e3e3e;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>@ViewData["Title"]</h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="EditBooking">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="BookingId" />
+                            <div class="form-group">
+                                <label asp-for="RefNo" class="control-label"></label>
+                                <input asp-for="RefNo" class="form-control" />
+                                <span asp-validation-for="RefNo" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PassengerName" class="control-label"></label>
+                                <input asp-for="PassengerName" class="form-control" />
+                                <span asp-validation-for="PassengerName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Quantity" class="control-label"></label>
+                                <input asp-for="Quantity" class="form-control" />
+                                <span asp-validation-for="Quantity" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.LocationId)
+                                @Html.TextBoxFor(m => m.LocationId, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.LocationId, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.BusId)
+                                @Html.TextBoxFor(m => m.BusId, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.BusId, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Bus)
+                                @Html.TextBoxFor(m => m.Bus, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Bus, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Location)
+                                @Html.TextBoxFor(m => m.Location, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Location, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Amount" class="control-label"></label>
+                                <input asp-for="Amount" class="form-control" />
+                                <span asp-validation-for="Amount" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                Paid
+                                @Html.RadioButtonFor(model => model.Status, "Booked")
+                                UnPaid
+                                @Html.RadioButtonFor(model => model.Status, "Not Booked")
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="btn btn-primary" />
+                            </div>
+                            <a asp-action="Default" class="btn btn-secondary">Back to List</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

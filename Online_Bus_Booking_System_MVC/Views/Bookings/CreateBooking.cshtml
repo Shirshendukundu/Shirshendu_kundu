@@ -1,0 +1,151 @@
+﻿@model Online_Bus_Booking_System_DAO.Booking
+@{
+    ViewData["Title"] = "Create Booking";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #1c92d2, #f2fcfe);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-header {
+            background: #007bff;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+
+            .btn-primary:hover {
+                background-color: #2980b9;
+                transform: scale(1.05);
+            }
+
+        .btn-secondary {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+            .form-control::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            .form-control:focus {
+                background: rgba(255, 255, 255, 0.3);
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>@ViewData["Title"]</h3>
+                    </div>
+                    <div class="card-body">
+                        @using (Html.BeginForm("CreateBooking", "Bookings", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.RefNo)
+                                @Html.TextBoxFor(m => m.RefNo, new { @class = "form-control", placeholder = "Enter Reference Number" })
+                                @Html.ValidationMessageFor(m => m.RefNo, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.PassengerName)
+                                @Html.TextBoxFor(m => m.PassengerName, new { @class = "form-control", placeholder = "Enter Passenger Name" })
+                                @Html.ValidationMessageFor(m => m.PassengerName, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Quantity)
+                                @Html.TextBoxFor(m => m.Quantity, new { @class = "form-control", placeholder = "Enter Quantity" })
+                                @Html.ValidationMessageFor(m => m.Quantity, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.LocationId)
+                                @Html.TextBoxFor(m => m.LocationId, new { @class = "form-control", placeholder = "Enter Location ID" })
+                                @Html.ValidationMessageFor(m => m.LocationId, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.BusId)
+                                @Html.TextBoxFor(m => m.BusId, new { @class = "form-control", placeholder = "Enter Bus ID" })
+                                @Html.ValidationMessageFor(m => m.BusId, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Bus)
+                                @Html.TextBoxFor(m => m.Bus, new { @class = "form-control", placeholder = "Enter Bus" })
+                                @Html.ValidationMessageFor(m => m.Bus, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Location)
+                                @Html.TextBoxFor(m => m.Location, new { @class = "form-control", placeholder = "Enter Location" })
+                                @Html.ValidationMessageFor(m => m.Location, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                @Html.LabelFor(m => m.Amount)
+                                @Html.TextBoxFor(m => m.Amount, new { @class = "form-control", placeholder = "Enter Amount" })
+                                @Html.ValidationMessageFor(m => m.Amount, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                Paid
+                                @Html.RadioButtonFor(model => model.Status, "Booked")
+                                UnPaid
+                                @Html.RadioButtonFor(model => model.Status, "Not Booked")
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Create" class="btn btn-primary btn-block" />
+                            </div>
+                        }
+                        <div>
+                            <a asp-action="Default" class="btn btn-secondary">Back to List</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>

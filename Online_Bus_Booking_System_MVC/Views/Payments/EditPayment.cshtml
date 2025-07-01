@@ -1,0 +1,138 @@
+﻿@model Online_Bus_Booking_System_DAO.Payment
+@{
+    ViewData["Title"] = "Edit Payment";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp9185491.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-header {
+            background: #007bff;
+            color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+
+            .btn-primary:hover {
+                background-color: #2980b9;
+                transform: scale(1.05);
+            }
+
+        .btn-secondary {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+            .form-control::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            .form-control:focus {
+                background: rgba(255, 255, 255, 0.3);
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>@ViewData["Title"]</h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="EditPayment">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="PaymentId" />
+                            <div class="form-group">
+                                <label asp-for="Amount" class="control-label"></label>
+                                <input asp-for="Amount" class="form-control" />
+                                <span asp-validation-for="Amount" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                UPI
+                                @Html.RadioButtonFor(model => model.PaymentMethod, "UPI")
+                                By Card
+                                @Html.RadioButtonFor(model => model.PaymentMethod, "By Card")
+                                By Bank
+                                @Html.RadioButtonFor(model => model.PaymentMethod, "By Bank")
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="PaymentDate" class="control-label"></label>
+                                <input asp-for="PaymentDate" class="form-control" type="date" />
+                                <span asp-validation-for="PaymentDate" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                Paid
+                                @Html.RadioButtonFor(model => model.PaymentStatus, "Paid")
+                                UnPaid
+                                @Html.RadioButtonFor(model => model.PaymentStatus, "UnPaid")
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="TransactionId" class="control-label"></label>
+                                <input asp-for="TransactionId" class="form-control" type="text" />
+                                <span asp-validation-for="TransactionId" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Save" class="btn btn-primary" />
+
+                            </div>
+                            <a asp-action="Default" class="btn btn-secondary">Back to List</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

@@ -1,0 +1,170 @@
+﻿@model IEnumerable<Online_Bus_Booking_System_DAO.Location>
+@{
+    ViewData["Title"] = "Location List";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            max-width: 1500px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #FFD700;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+                transform: scale(1.05);
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border: none;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+
+            .btn-danger:hover {
+                background-color: #c82333;
+                transform: scale(1.05);
+            }
+
+        .btn-success {
+            background-color: #28a745;
+            border: none;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+
+            .btn-success:hover {
+                background-color: #218838;
+                transform: scale(1.05);
+            }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+            .form-control::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            .form-control:focus {
+                background: rgba(255, 255, 255, 0.3);
+                color: white;
+            }
+
+        .table {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+            .table th, .table td {
+                padding: 15px;
+            }
+
+            .table th {
+                background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+                color: white;
+            }
+
+        .pagination {
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>@ViewData["Title"]</h1>
+        <div class="alert alert-success" role="alert" style="display:none;">Data successfully saved</div>
+        <div class="d-flex justify-content-between mb-3">
+            <div>
+                <label>
+                    Show
+                    <select class="custom-select custom-select-sm form-control form-control-sm" style="width: auto;">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select> entries
+                </label>
+            </div>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>LocationID</th>
+                    <th>Terminal</th>
+                    <th>City</th>
+                    <th>Province</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>#</td>
+                        <td>@Html.DisplayFor(modelItem => item.LocationId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.TerminalName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.City)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Province)</td>
+                        <td>
+                            <a asp-action="EditLocation" asp-route-id="@item.LocationId" class="btn btn-primary btn-sm">Edit</a>
+                            <a asp-action="DeleteLocation" asp-route-id="@item.LocationId" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between">
+            <div>Showing 1 to 3 of 3 entries</div>
+            <div>
+                <nav>
+                    <ul class="pagination pagination-sm">
+                        <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <a asp-action="AddLocation" class="btn btn-primary">Add New Location</a>
+        <a asp-controller="Home" asp-action="User" class="btn btn-success btn-sm">Home</a>
+    </div>
+</body>
+</html>

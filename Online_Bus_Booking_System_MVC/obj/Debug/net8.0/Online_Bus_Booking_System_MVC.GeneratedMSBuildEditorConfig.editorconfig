@@ -1,0 +1,203 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Online_Bus_Booking_System_MVC
+build_property.RootNamespace = Online_Bus_Booking_System_MVC
+build_property.ProjectDir = C:\Users\user\Desktop\Online_Bus_ticket_Booking\Online_Bus_Booking_System_MVC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\Online_Bus_ticket_Booking\Online_Bus_Booking_System_MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Admins/CreateAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXENyZWF0ZUFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Admins/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Admins/EditAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEVkaXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Admins/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Admins/RegisterAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFJlZ2lzdGVyQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Admins/RemoveAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFJlbW92ZUFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Bookings/CancelBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ2FuY2VsQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Bookings/CreateBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ3JlYXRlQm9va2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Bookings/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Bookings/EditBooking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcRWRpdEJvb2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Buses/CreateBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzZXNcQ3JlYXRlQnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Buses/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Buses/EditBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzZXNcRWRpdEJ1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Buses/RemoveBus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzZXNcUmVtb3ZlQnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Cancellations/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuY2VsbGF0aW9uc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Cancellations/RemoveCancellation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuY2VsbGF0aW9uc1xSZW1vdmVDYW5jZWxsYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Home/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Home/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Locations/AddLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEFkZExvY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Locations/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Locations/DeleteLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXERlbGV0ZUxvY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Locations/EditLocation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25zXEVkaXRMb2NhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Payments/CreatePayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcQ3JlYXRlUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Payments/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Payments/DeletePayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRGVsZXRlUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Payments/EditPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudHNcRWRpdFBheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Reschedules/CreateReschedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzY2hlZHVsZXNcQ3JlYXRlUmVzY2hlZHVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Reschedules/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzY2hlZHVsZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Reschedules/EditReschedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzY2hlZHVsZXNcRWRpdFJlc2NoZWR1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Reschedules/RemoveReschedule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzY2hlZHVsZXNcUmVtb3ZlUmVzY2hlZHVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Users/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Users/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Users/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Users/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Users/RegisterUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0ZXJVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Users/RemoveUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVtb3ZlVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Users/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Online_Bus_ticket_Booking/Online_Bus_Booking_System_MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o4166x9q3e

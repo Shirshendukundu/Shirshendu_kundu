@@ -1,0 +1,102 @@
+﻿@{
+    ViewData["Title"] = "Login Portal";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp9185491.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .card-header {
+            background: linear-gradient(90deg, rgba(255, 64, 64, 1), rgba(255, 128, 0, 1));
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .btn-primary, .btn-danger {
+            margin: 10px;
+            border-radius: 25px;
+            font-size: 1.1em;
+            transition: transform 0.3s;
+        }
+        .btn-primary:hover, .btn-danger:hover {
+            transform: scale(1.1);
+        }
+        .table {
+            margin-bottom: 0;
+        }
+        .text-center {
+            text-align: center !important;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            padding: 1em;
+            border-radius: 10px;
+        }
+        .jumbotron {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+        .lead {
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome to Online Bus Booking</h1>
+            <p class="lead">Your gateway to seamless travel experiences. Let's get you started.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>@ViewData["Title"]</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <tr>
+                                <td class="text-center">
+                                    <a asp-controller="Admins" asp-action="Login" class="btn btn-primary btn-sm">Admin Login</a>
+                                    <a asp-controller="Users" asp-action="Login" class="btn btn-danger btn-sm">User Login</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>
